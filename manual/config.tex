@@ -1,0 +1,44 @@
+%% Pacotes elementares
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{amsmath,amssymb,amsmath,bbm,amsfonts}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{booktabs} % Formatação de tabelas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Configuração da página, espaçamento e fontes
+
+\renewcommand{\titlefont}{\rmfamily\bfseries}
+\renewcommand{\sectfont}{\normalsize\rmfamily\bfseries}
+\renewcommand{\descfont}{\normalsize\rmfamily\bfseries}
+\usepackage{anysize}
+\marginsize{30mm}{20mm}{30mm}{20mm}
+\usepackage[onehalfspacing]{setspace}
+\addto\captionsbrazil{\renewcommand{\refname}{Referências Bibliográficas}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cabeçalhos e estilo
+
+\usepackage[headsepline]{scrlayer-scrpage}
+\setlength{\headheight}{1.1\baselineskip}
+\automark[section]{section}
+\clearpairofpagestyles
+\ihead{\footnotesize{Núcleo de Computação\\
+Escola Superior de Tecnologia\\
+Universidade do Estado do Amazonas}}
+\ohead{
+\includegraphics[width=0.10\textwidth]{./img/logo_uea}
+\includegraphics[width=0.12\textwidth]{./img/nucomp}}
+
+
+\ifoot{}
+\ofoot[\pagemark]{\pagemark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Revisão e anotações
+\usepackage{xcolor}
+\definecolor{lightblue}{RGB}{0,191,255}
+\usepackage[textsize=tiny,backgroundcolor=lightblue,linecolor=lightblue]{todonotes}
